@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hex',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCXXCompilerId.cpp']]]
+  ['line',['Line',['../class_line.html',1,'Line'],['../class_line.html#acc11b8a429d8cdd63ba6803dff5602b3',1,'Line::Line()'],['../class_line.html#a47a27afa404cf8f8d8deee32482aa012',1,'Line::Line(coord refX, coord refY, coord endX, coord endY)']]]
 ];
