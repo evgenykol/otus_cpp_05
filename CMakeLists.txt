@@ -6,19 +6,22 @@ find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 configure_file(version.h.in version.h)
 
-add_executable(veditor main.cpp)
+add_executable(veditor main.cpp
+    Include/veditor.h
+    Include/document.h
+    Include/primitive.h)
 
 #add_library(ip_filter_lib ip_filter.h ip_filter.cpp)
 
 #add_executable(ip_filter_tests ip_filter_tests.cpp)
 
-#set_target_properties(veditor ip_filter_lib ip_filter_tests
-#        PROPERTIES
-#                CXX_STANDARD 14
-#                CXX_STANDARD_REQUIRED ON
-#                CMAKE_CXX_EXTENSIONS OFF
-#                COMPILE_OPTIONS -Wpedantic -Wall -Wextra
-#)
+set_target_properties(veditor
+        PROPERTIES
+                CXX_STANDARD 14
+                CXX_STANDARD_REQUIRED ON
+                CMAKE_CXX_EXTENSIONS OFF
+                COMPILE_OPTIONS -Wpedantic -Wall -Wextra
+)
 
 #set_target_properties(ip_filter_tests
 #        PROPERTIES
