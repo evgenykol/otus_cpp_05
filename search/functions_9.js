@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['point',['Point',['../class_point.html#ad92f2337b839a94ce97dcdb439b4325a',1,'Point::Point()'],['../class_point.html#ac1d0351966bf2fc6bcc3297cce838962',1,'Point::Point(coord _x, coord _y)']]],
-  ['primitive',['Primitive',['../class_primitive.html#ae6b6e9440d482575d1dcbf77a936c201',1,'Primitive::Primitive()'],['../class_primitive.html#a86d514a6055e743cd38b7fdbb3bc8930',1,'Primitive::Primitive(coord _x, coord _y)']]]
+  ['square',['Square',['../class_square.html#a3dc7ff9aefc2725172b5d3153973d243',1,'Square::Square()'],['../class_square.html#ae95cf39290c358f482e0fcb7b6de0873',1,'Square::Square(coord refX, coord refY, coord len)']]]
 ];

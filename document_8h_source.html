@@ -113,65 +113,41 @@ $(document).ready(function(){initNavTree('document_8h_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="primitive_8h.html">primitive.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_file.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file.html">File</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_document.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_document.html">Document</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_file.html#a980935e2bea0d4a7ed13cb0e4bcf876b">   13</a></span>&#160;    std::string <a class="code" href="class_file.html#a980935e2bea0d4a7ed13cb0e4bcf876b">path</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_file.html#acfc4bab843bcd13e84475d59958ed6f4">   14</a></span>&#160;    std::fstream <a class="code" href="class_file.html#acfc4bab843bcd13e84475d59958ed6f4">file</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_file.html#ae039af5807fc385f41b60644725d15d0">   16</a></span>&#160;    <a class="code" href="class_file.html#ae039af5807fc385f41b60644725d15d0">File</a>() {}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//File(std::string _path) : path(_path) {}</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_file.html#a354a19b25e987a554b47dbe194e2e8b5">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#a354a19b25e987a554b47dbe194e2e8b5">Open</a>() {}</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_file.html#a699606a40c0c8a76f81ae89821f882c4">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#a699606a40c0c8a76f81ae89821f882c4">Save</a>() {}</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_file.html#a7ce241fcabbbbed256d1d2beb5de300f">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file.html#a7ce241fcabbbbed256d1d2beb5de300f">Close</a>() {}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::vector&lt;Primitive&gt; *primitives;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_document.html#acdbcbe550084e8c20f4f67eb229ad66a">   16</a></span>&#160;    <a class="code" href="class_document.html#acdbcbe550084e8c20f4f67eb229ad66a">Document</a>() {}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">   17</a></span>&#160;    <a class="code" href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">~Document</a>() {}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">   19</a></span>&#160;    std::unique_ptr&lt;Primitive&gt; <a class="code" href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">AddPrimitive</a>(<a class="code" href="class_primitive.html">Primitive</a> prim)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_document.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_document.html">Document</a> : <span class="keyword">public</span> <a class="code" href="class_file.html">File</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;Primitive&gt; *primitives;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_document.html#a1f49383c0a78a828bd3b55bdfcb6209a">   30</a></span>&#160;    <a class="code" href="class_document.html#a1f49383c0a78a828bd3b55bdfcb6209a">Document</a>(std::string _path)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_file.html#a980935e2bea0d4a7ed13cb0e4bcf876b">path</a> = _path;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">   34</a></span>&#160;    <a class="code" href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">~Document</a>() {}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">   36</a></span>&#160;    std::unique_ptr&lt;Primitive&gt; <a class="code" href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">AddPrimitive</a>(<a class="code" href="class_primitive.html">Primitive</a> prim)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">DeletePrimitive</a>(std::unique_ptr&lt;Primitive&gt; &amp;prim)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="ttc" id="class_file_html_acfc4bab843bcd13e84475d59958ed6f4"><div class="ttname"><a href="class_file.html#acfc4bab843bcd13e84475d59958ed6f4">File::file</a></div><div class="ttdeci">std::fstream file</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00014">document.h:14</a></div></div>
-<div class="ttc" id="class_file_html_a980935e2bea0d4a7ed13cb0e4bcf876b"><div class="ttname"><a href="class_file.html#a980935e2bea0d4a7ed13cb0e4bcf876b">File::path</a></div><div class="ttdeci">std::string path</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00013">document.h:13</a></div></div>
-<div class="ttc" id="class_document_html_a1f49383c0a78a828bd3b55bdfcb6209a"><div class="ttname"><a href="class_document.html#a1f49383c0a78a828bd3b55bdfcb6209a">Document::Document</a></div><div class="ttdeci">Document(std::string _path)</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00030">document.h:30</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">DeletePrimitive</a>(std::unique_ptr&lt;Primitive&gt; &amp;prim)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="ttc" id="primitive_8h_html"><div class="ttname"><a href="primitive_8h.html">primitive.h</a></div></div>
-<div class="ttc" id="class_document_html_ac2e3f62307dc22baac21ddc10fa1609c"><div class="ttname"><a href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">Document::~Document</a></div><div class="ttdeci">~Document()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00034">document.h:34</a></div></div>
-<div class="ttc" id="class_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00010">document.h:10</a></div></div>
-<div class="ttc" id="class_document_html"><div class="ttname"><a href="class_document.html">Document</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00024">document.h:24</a></div></div>
-<div class="ttc" id="class_file_html_ae039af5807fc385f41b60644725d15d0"><div class="ttname"><a href="class_file.html#ae039af5807fc385f41b60644725d15d0">File::File</a></div><div class="ttdeci">File()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00016">document.h:16</a></div></div>
-<div class="ttc" id="class_document_html_a7bb75fbc58ea74840234e582ab3ade05"><div class="ttname"><a href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">Document::DeletePrimitive</a></div><div class="ttdeci">void DeletePrimitive(std::unique_ptr&lt; Primitive &gt; &amp;prim)</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00041">document.h:41</a></div></div>
+<div class="ttc" id="class_document_html_ac2e3f62307dc22baac21ddc10fa1609c"><div class="ttname"><a href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">Document::~Document</a></div><div class="ttdeci">~Document()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00017">document.h:17</a></div></div>
+<div class="ttc" id="class_document_html"><div class="ttname"><a href="class_document.html">Document</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00010">document.h:10</a></div></div>
+<div class="ttc" id="class_document_html_a7bb75fbc58ea74840234e582ab3ade05"><div class="ttname"><a href="class_document.html#a7bb75fbc58ea74840234e582ab3ade05">Document::DeletePrimitive</a></div><div class="ttdeci">void DeletePrimitive(std::unique_ptr&lt; Primitive &gt; &amp;prim)</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00024">document.h:24</a></div></div>
 <div class="ttc" id="class_primitive_html"><div class="ttname"><a href="class_primitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> <a href="primitive_8h_source.html#l00013">primitive.h:13</a></div></div>
-<div class="ttc" id="class_file_html_a699606a40c0c8a76f81ae89821f882c4"><div class="ttname"><a href="class_file.html#a699606a40c0c8a76f81ae89821f882c4">File::Save</a></div><div class="ttdeci">void Save()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00020">document.h:20</a></div></div>
-<div class="ttc" id="class_file_html_a354a19b25e987a554b47dbe194e2e8b5"><div class="ttname"><a href="class_file.html#a354a19b25e987a554b47dbe194e2e8b5">File::Open</a></div><div class="ttdeci">void Open()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00019">document.h:19</a></div></div>
-<div class="ttc" id="class_file_html_a7ce241fcabbbbed256d1d2beb5de300f"><div class="ttname"><a href="class_file.html#a7ce241fcabbbbed256d1d2beb5de300f">File::Close</a></div><div class="ttdeci">void Close()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00021">document.h:21</a></div></div>
-<div class="ttc" id="class_document_html_a06a3d5c6a7158ffa559de563355039a3"><div class="ttname"><a href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">Document::AddPrimitive</a></div><div class="ttdeci">std::unique_ptr&lt; Primitive &gt; AddPrimitive(Primitive prim)</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00036">document.h:36</a></div></div>
+<div class="ttc" id="class_document_html_acdbcbe550084e8c20f4f67eb229ad66a"><div class="ttname"><a href="class_document.html#acdbcbe550084e8c20f4f67eb229ad66a">Document::Document</a></div><div class="ttdeci">Document()</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00016">document.h:16</a></div></div>
+<div class="ttc" id="class_document_html_a06a3d5c6a7158ffa559de563355039a3"><div class="ttname"><a href="class_document.html#a06a3d5c6a7158ffa559de563355039a3">Document::AddPrimitive</a></div><div class="ttdeci">std::unique_ptr&lt; Primitive &gt; AddPrimitive(Primitive prim)</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l00019">document.h:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><a class="el" href="document_8h.html">document.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2018 19:29:11 for veditor by
+    <li class="footer">Generated on Wed Feb 7 2018 18:52:46 for veditor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

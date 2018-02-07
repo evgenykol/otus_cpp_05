@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['line',['Line',['../class_line.html',1,'']]]
+  ['point',['Point',['../class_point.html',1,'']]],
+  ['primitive',['Primitive',['../class_primitive.html',1,'']]]
 ];

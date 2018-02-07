@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['refpiont',['refPiont',['../class_primitive.html#af80621f8bf95259d5ec1b5019b30b49f',1,'Primitive']]]
+  ['y',['y',['../class_basic_point.html#af5a156d29eb2c708c5605a929b2b472f',1,'BasicPoint']]]
 ];

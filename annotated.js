@@ -4,7 +4,6 @@ var annotated =
     [ "Circle", "class_circle.html", "class_circle" ],
     [ "Document", "class_document.html", "class_document" ],
     [ "Editor", "class_editor.html", "class_editor" ],
-    [ "File", "class_file.html", "class_file" ],
     [ "Line", "class_line.html", "class_line" ],
     [ "Point", "class_point.html", "class_point" ],
     [ "Primitive", "class_primitive.html", "class_primitive" ],

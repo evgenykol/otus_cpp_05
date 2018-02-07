@@ -121,17 +121,33 @@ $(document).ready(function(){initNavTree('veditor_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_editor.html#ae208b788b6212af03488814462ae40d6">   15</a></span>&#160;    <a class="code" href="class_editor.html#ae208b788b6212af03488814462ae40d6">Editor</a>() {}</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_editor.html#ad465abc9575af92b4fa61525085172d6">   16</a></span>&#160;    <a class="code" href="class_editor.html#ad465abc9575af92b4fa61525085172d6">~Editor</a>() {}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_editor.html#ae0faac517b39e93d247c3692dcbcbd2f">   18</a></span>&#160;    std::unique_ptr&lt;Document&gt; <a class="code" href="class_editor.html#ae0faac517b39e93d247c3692dcbcbd2f">CreateDocument</a>(std::string path)</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_editor.html#a5ad9b6c60e896628ffa0e6ea7192aec9">   18</a></span>&#160;    std::unique_ptr&lt;Document&gt; <a class="code" href="class_editor.html#a5ad9b6c60e896628ffa0e6ea7192aec9">CreateDocument</a>()</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_editor.html#a9a28df13387d5ad889a30788e74119d2">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_editor.html#a9a28df13387d5ad889a30788e74119d2">CloseDocument</a>() {}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_editor.html#aba06bad6b647197f6ce26baa037b427f">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_editor.html#aba06bad6b647197f6ce26baa037b427f">ImportDocument</a>(<span class="keyword">const</span> std::string path, std::unique_ptr&lt;Document&gt; &amp;doc)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_editor.html#a612aba313bf1c7c8542900a415a27a30">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_editor.html#a612aba313bf1c7c8542900a415a27a30">ExportDocument</a>(<span class="keyword">const</span> std::string path, <span class="keyword">const</span> std::unique_ptr&lt;Document&gt; &amp;doc)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_editor.html#ae405a7d613be140a459de54bf77bbaf9">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_editor.html#ae405a7d613be140a459de54bf77bbaf9">CloseDocument</a>(std::unique_ptr&lt;Document&gt; &amp;doc)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="ttc" id="class_editor_html_ae208b788b6212af03488814462ae40d6"><div class="ttname"><a href="class_editor.html#ae208b788b6212af03488814462ae40d6">Editor::Editor</a></div><div class="ttdeci">Editor()</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00015">veditor.h:15</a></div></div>
-<div class="ttc" id="class_editor_html_a9a28df13387d5ad889a30788e74119d2"><div class="ttname"><a href="class_editor.html#a9a28df13387d5ad889a30788e74119d2">Editor::CloseDocument</a></div><div class="ttdeci">void CloseDocument()</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00022">veditor.h:22</a></div></div>
+<div class="ttc" id="class_editor_html_aba06bad6b647197f6ce26baa037b427f"><div class="ttname"><a href="class_editor.html#aba06bad6b647197f6ce26baa037b427f">Editor::ImportDocument</a></div><div class="ttdeci">void ImportDocument(const std::string path, std::unique_ptr&lt; Document &gt; &amp;doc)</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00023">veditor.h:23</a></div></div>
 <div class="ttc" id="document_8h_html"><div class="ttname"><a href="document_8h.html">document.h</a></div></div>
 <div class="ttc" id="class_editor_html_ad465abc9575af92b4fa61525085172d6"><div class="ttname"><a href="class_editor.html#ad465abc9575af92b4fa61525085172d6">Editor::~Editor</a></div><div class="ttdeci">~Editor()</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00016">veditor.h:16</a></div></div>
-<div class="ttc" id="class_editor_html_ae0faac517b39e93d247c3692dcbcbd2f"><div class="ttname"><a href="class_editor.html#ae0faac517b39e93d247c3692dcbcbd2f">Editor::CreateDocument</a></div><div class="ttdeci">std::unique_ptr&lt; Document &gt; CreateDocument(std::string path)</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00018">veditor.h:18</a></div></div>
+<div class="ttc" id="class_editor_html_a5ad9b6c60e896628ffa0e6ea7192aec9"><div class="ttname"><a href="class_editor.html#a5ad9b6c60e896628ffa0e6ea7192aec9">Editor::CreateDocument</a></div><div class="ttdeci">std::unique_ptr&lt; Document &gt; CreateDocument()</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00018">veditor.h:18</a></div></div>
+<div class="ttc" id="class_editor_html_ae405a7d613be140a459de54bf77bbaf9"><div class="ttname"><a href="class_editor.html#ae405a7d613be140a459de54bf77bbaf9">Editor::CloseDocument</a></div><div class="ttdeci">void CloseDocument(std::unique_ptr&lt; Document &gt; &amp;doc)</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00033">veditor.h:33</a></div></div>
+<div class="ttc" id="class_editor_html_a612aba313bf1c7c8542900a415a27a30"><div class="ttname"><a href="class_editor.html#a612aba313bf1c7c8542900a415a27a30">Editor::ExportDocument</a></div><div class="ttdeci">void ExportDocument(const std::string path, const std::unique_ptr&lt; Document &gt; &amp;doc)</div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00028">veditor.h:28</a></div></div>
 <div class="ttc" id="class_editor_html"><div class="ttname"><a href="class_editor.html">Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="veditor_8h_source.html#l00009">veditor.h:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +155,7 @@ $(document).ready(function(){initNavTree('veditor_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><a class="el" href="veditor_8h.html">veditor.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2018 19:29:11 for veditor by
+    <li class="footer">Generated on Wed Feb 7 2018 18:52:46 for veditor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -109,16 +109,18 @@ $(document).ready(function(){initNavTree('class_editor.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_editor.html">Editor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_editor.html#a9a28df13387d5ad889a30788e74119d2">CloseDocument</a>()</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_editor.html#ae0faac517b39e93d247c3692dcbcbd2f">CreateDocument</a>(std::string path)</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_editor.html#ae405a7d613be140a459de54bf77bbaf9">CloseDocument</a>(std::unique_ptr&lt; Document &gt; &amp;doc)</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_editor.html#a5ad9b6c60e896628ffa0e6ea7192aec9">CreateDocument</a>()</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_editor.html#ae208b788b6212af03488814462ae40d6">Editor</a>()</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_editor.html#a612aba313bf1c7c8542900a415a27a30">ExportDocument</a>(const std::string path, const std::unique_ptr&lt; Document &gt; &amp;doc)</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_editor.html#aba06bad6b647197f6ce26baa037b427f">ImportDocument</a>(const std::string path, std::unique_ptr&lt; Document &gt; &amp;doc)</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_editor.html#ad465abc9575af92b4fa61525085172d6">~Editor</a>()</td><td class="entry"><a class="el" href="class_editor.html">Editor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 28 2018 19:29:11 for veditor by
+    <li class="footer">Generated on Wed Feb 7 2018 18:52:46 for veditor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

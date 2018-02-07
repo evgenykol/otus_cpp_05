@@ -118,10 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae208b788b6212af03488814462ae40d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad465abc9575af92b4fa61525085172d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#ad465abc9575af92b4fa61525085172d6">~Editor</a> ()</td></tr>
 <tr class="separator:ad465abc9575af92b4fa61525085172d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0faac517b39e93d247c3692dcbcbd2f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#ae0faac517b39e93d247c3692dcbcbd2f">CreateDocument</a> (std::string path)</td></tr>
-<tr class="separator:ae0faac517b39e93d247c3692dcbcbd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a28df13387d5ad889a30788e74119d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#a9a28df13387d5ad889a30788e74119d2">CloseDocument</a> ()</td></tr>
-<tr class="separator:a9a28df13387d5ad889a30788e74119d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad9b6c60e896628ffa0e6ea7192aec9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#a5ad9b6c60e896628ffa0e6ea7192aec9">CreateDocument</a> ()</td></tr>
+<tr class="separator:a5ad9b6c60e896628ffa0e6ea7192aec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba06bad6b647197f6ce26baa037b427f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#aba06bad6b647197f6ce26baa037b427f">ImportDocument</a> (const std::string path, std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;doc)</td></tr>
+<tr class="separator:aba06bad6b647197f6ce26baa037b427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a612aba313bf1c7c8542900a415a27a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#a612aba313bf1c7c8542900a415a27a30">ExportDocument</a> (const std::string path, const std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;doc)</td></tr>
+<tr class="separator:a612aba313bf1c7c8542900a415a27a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae405a7d613be140a459de54bf77bbaf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor.html#ae405a7d613be140a459de54bf77bbaf9">CloseDocument</a> (std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;doc)</td></tr>
+<tr class="separator:ae405a7d613be140a459de54bf77bbaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -178,7 +182,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9a28df13387d5ad889a30788e74119d2"></a>
+<a class="anchor" id="ae405a7d613be140a459de54bf77bbaf9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,7 +192,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Editor::CloseDocument </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -199,11 +204,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="veditor_8h_source.html#l00022">22</a> of file <a class="el" href="veditor_8h_source.html">veditor.h</a>.</p>
+<p>Definition at line <a class="el" href="veditor_8h_source.html#l00033">33</a> of file <a class="el" href="veditor_8h_source.html">veditor.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae0faac517b39e93d247c3692dcbcbd2f"></a>
+<a class="anchor" id="a5ad9b6c60e896628ffa0e6ea7192aec9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -213,8 +218,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::unique_ptr&lt;<a class="el" href="class_document.html">Document</a>&gt; Editor::CreateDocument </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -229,6 +233,78 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a612aba313bf1c7c8542900a415a27a30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::ExportDocument </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="veditor_8h_source.html#l00028">28</a> of file <a class="el" href="veditor_8h_source.html">veditor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba06bad6b647197f6ce26baa037b427f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::ImportDocument </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="veditor_8h_source.html#l00023">23</a> of file <a class="el" href="veditor_8h_source.html">veditor.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Include/<a class="el" href="veditor_8h_source.html">veditor.h</a></li>
 </ul>
@@ -238,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_editor.html">Editor</a></li>
-    <li class="footer">Generated on Sun Jan 28 2018 19:29:11 for veditor by
+    <li class="footer">Generated on Wed Feb 7 2018 18:52:46 for veditor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
