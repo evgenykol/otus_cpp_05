@@ -7,30 +7,13 @@
 
 #include "primitive.h"
 
-class File
-{
-protected:
-    std::string path;
-    std::fstream file;
-
-    File() {}
-    //File(std::string _path) : path(_path) {}
-public:
-    void Open() {}
-    void Save() {}
-    void Close() {}
-};
-
-class Document : public File
+class Document
 {
 private:
     std::vector<Primitive> *primitives;
 
 public:
-    Document(std::string _path)
-    {
-        path = _path;
-    }
+    Document() {}
     ~Document() {}
 
     std::unique_ptr<Primitive> AddPrimitive(Primitive prim)

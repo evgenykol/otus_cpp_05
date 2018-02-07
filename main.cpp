@@ -7,15 +7,16 @@
 int main()
 {
     Editor edt;
-    auto doc = edt.CreateDocument("/home/user/path");
-    doc->Open();
+    auto doc = edt.CreateDocument();
+    edt.ImportDocument("/home/user/path", doc);
+
     auto point = doc->AddPrimitive( Point(0,0));
     auto circle = doc->AddPrimitive( Circle(1, 1, 1));
 
     doc->DeletePrimitive(point);
     doc->DeletePrimitive(circle);
 
-    doc->Save();
-    doc->Close();
+    edt.ExportDocument("/home/user/path", doc);
+    edt.CloseDocument(doc);
     return 0;
 }
